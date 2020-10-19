@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deck of Cards</title>
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+</head>
+<body>
+	<div class="deck">
+        <h1>A Deck of Cards</h1>
+
+        <button id="btnShuffle" class="btn">Shuffle</button>
+        <div id="deck"></div>
+    </div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/deckofcards.js"></script>
+
+	<script type="text/javascript">
+		var board_ID = "deck";
+		var board = new DeckOfCards(board_ID);
+
+		var deck = board.getDeck();
+		board.renderDeck(deck);
+
+		$(document).ready(function() {
+			$("#btnShuffle").click(function (e) {
+			    board.shuffle();
+			});
+		})
+	</script>
+</body>
+</html>

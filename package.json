@@ -1,0 +1,17 @@
+{
+    "name": "deckofcards",
+    "description": "This is just quick & rough implementation of your job posted on Upwork.",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ashleygwilliams/my_package.git"
+    },
+    "keywords": [],
+    "author": "Yaroslav Gorlov(jsonfreel@gmail.com)",
+    "license": "ISC",
+    "bugs": {}
+}
